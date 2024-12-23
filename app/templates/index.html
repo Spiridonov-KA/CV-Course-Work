@@ -6,7 +6,7 @@
     <title>Detect Objects</title>
 </head>
 <body>
-    <h1>Upload an Image to Deteckt Objects</h1>
+    <h1>Upload an Image to Detect Objects</h1>
     <form method="POST" enctype="multipart/form-data">
         <input type="file" name="file" accept="image/*">
         <button type="submit">Upload and Detect</button>
@@ -16,7 +16,7 @@
         <h2>Original Image:</h2>
         <img src="{{ url_for('static', filename='output/' + original_image) }}" alt="Original Image" width="300">
         
-        <h2>Negative Image:</h2>
+        <h2>Processed  Image:</h2>
         <img src="{{ url_for('static', filename='output/' + processed_image) }}" alt="Processed Image" width="300">
     {% endif %}
 </body>

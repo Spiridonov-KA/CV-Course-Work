@@ -14,3 +14,24 @@ Then you have to browse image. After that, you have to push down button "Upload 
 To download the processed image you have to click right button mouse and click "Save Image As..."
 
 ![image](images/report_3.png)
+
+
+## Results
+
+Original:
+![image](images/orig_1.jpg)
+
+Result:
+![image](images/res_1.jpg)
+
+Original:
+![image](images/orig_2.jpg)
+
+Result:
+![image](images/res_2.jpg)
+
+Original:
+![image](images/orig_3.jpg)
+
+Result:
+![image](images/res_3.jpg)
