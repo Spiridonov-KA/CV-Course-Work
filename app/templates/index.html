@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Negative</title>
+</head>
+<body>
+    <h1>Upload an Image to Convert to Negative</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <button type="submit">Upload and Convert</button>
+    </form>
+
+    {% if original_image and processed_image %}
+        <h2>Original Image:</h2>
+        <img src="{{ url_for('static', filename='output/' + original_image) }}" alt="Original Image" width="300">
+        
+        <h2>Negative Image:</h2>
+        <img src="{{ url_for('static', filename='output/' + processed_image) }}" alt="Negative Image" width="300">
+    {% endif %}
+</body>
+</html>
